@@ -47,6 +47,9 @@ header {
           border: 2px solid rgb(203, 232, 195);
           outline: none;
           padding-left: 20px;
+          outline: none;
+          flex-shrink: 0;
+          font-size: 18px;
         }
         img {
           position: absolute;
