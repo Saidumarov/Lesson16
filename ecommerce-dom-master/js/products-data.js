@@ -1,4 +1,4 @@
-const products = [
+const Products = [
   {
     id: 1,
     name: "Apple",
@@ -8,10 +8,10 @@ const products = [
     rating: 5,
     discount: 0,
     images: [
-      "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
+      "../../ecommerce-dom-master/assets/images/products/1.png",
+      "../../ecommerce-dom-master/assets/images/products/2.png",
+      "../../ecommerce-dom-master/assets/images/products/3.png",
+      "../../ecommerce-dom-master/assets/images/products/4.png",
     ],
   },
   {
@@ -24,10 +24,10 @@ const products = [
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
-      "../assets/images/products/5.png",
+      "../../ecommerce-dom-master/assets/images/products/2.png",
+      "../../ecommerce-dom-master/assets/images/products/3.png",
+      "../../ecommerce-dom-master/assets/images/products/4.png",
+      "../../ecommerce-dom-master/assets/images/products/5.png",
     ],
   },
   {
@@ -40,10 +40,10 @@ const products = [
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
-      "../assets/images/products/5.png",
-      "../assets/images/products/6.png",
+      "../../ecommerce-dom-master/assets/images/products/3.png",
+      "../../ecommerce-dom-master/assets/images/products/4.png",
+      "../../ecommerce-dom-master/assets/images/products/5.png",
+      "../../ecommerce-dom-master/assets/images/products/6.png",
     ],
   },
   {
@@ -56,10 +56,10 @@ const products = [
     rating: 4.5,
     discount: 20,
     images: [
-      "../assets/images/products/4.png",
-      "../assets/images/products/5.png",
-      "../assets/images/products/6.png",
-      "../assets/images/products/7.png",
+      "../../ecommerce-dom-master/assets/images/products/4.png",
+      "../../ecommerce-dom-master/assets/images/products/5.png",
+      "../../ecommerce-dom-master/assets/images/products/6.png",
+      "../../ecommerce-dom-master/assets/images/products/7.png",
     ],
   },
   {
@@ -72,10 +72,10 @@ const products = [
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/5.png",
-      "../assets/images/products/6.png",
-      "../assets/images/products/7.png",
-      "../assets/images/products/8.png",
+      "../../ecommerce-dom-master/assets/images/products/5.png",
+      "../../ecommerce-dom-master/assets/images/products/6.png",
+      "../../ecommerce-dom-master/assets/images/products/7.png",
+      "../../ecommerce-dom-master/assets/images/products/8.png",
     ],
   },
   {
@@ -88,10 +88,10 @@ const products = [
     rating: 3.5,
     discount: 50,
     images: [
-      "../assets/images/products/6.png",
-      "../assets/images/products/7.png",
-      "../assets/images/products/8.png",
-      "../assets/images/products/9.png",
+      "../../ecommerce-dom-master/assets/images/products/6.png",
+      "../../ecommerce-dom-master/assets/images/products/7.png",
+      "../../ecommerce-dom-master/assets/images/products/8.png",
+      "../../ecommerce-dom-master/assets/images/products/9.png",
     ],
   },
   {
@@ -104,10 +104,10 @@ const products = [
     rating: 3.5,
     discount: 20,
     images: [
-      "../assets/images/products/7.png",
-      "../assets/images/products/8.png",
-      "../assets/images/products/9.png",
-      "../assets/images/products/10.png",
+      "../../ecommerce-dom-master/assets/images/products/7.png",
+      "../../ecommerce-dom-master/assets/images/products/8.png",
+      "../../ecommerce-dom-master/assets/images/products/9.png",
+      "../../ecommerce-dom-master/assets/images/products/10.png",
     ],
   },
   {
@@ -120,10 +120,10 @@ const products = [
     rating: 4.5,
     discount: 20,
     images: [
-      "../assets/images/products/8.png",
-      "../assets/images/products/9.png",
-      "../assets/images/products/10.png",
-      "../assets/images/products/11.png",
+      "../../ecommerce-dom-master/assets/images/products/8.png",
+      "../../ecommerce-dom-master/assets/images/products/9.png",
+      "../../ecommerce-dom-master/assets/images/products/10.png",
+      "../../ecommerce-dom-master/assets/images/products/11.png",
     ],
   },
   {
@@ -136,10 +136,10 @@ const products = [
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/9.png",
-      "../assets/images/products/10.png",
-      "../assets/images/products/11.png",
-      "../assets/images/products/12.png",
+      "../../ecommerce-dom-master/assets/images/products/9.png",
+      "../../ecommerce-dom-master/assets/images/products/10.png",
+      "../../ecommerce-dom-master/assets/images/products/11.png",
+      "../../ecommerce-dom-master/assets/images/products/12.png",
     ],
   },
   {
@@ -152,10 +152,10 @@ const products = [
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/10.png",
-      "../assets/images/products/11.png",
-      "../assets/images/products/12.png",
-      "../assets/images/products/13.png",
+      "../../ecommerce-dom-master/assets/images/products/10.png",
+      "../../ecommerce-dom-master/assets/images/products/11.png",
+      "../../ecommerce-dom-master/assets/images/products/12.png",
+      "../../ecommerce-dom-master/assets/images/products/13.png",
     ],
   },
   {
@@ -168,10 +168,10 @@ const products = [
     rating: 3.5,
     discount: 50,
     images: [
-      "../assets/images/products/11.png",
-      "../assets/images/products/12.png",
-      "../assets/images/products/13.png",
-      "../assets/images/products/14.png",
+      "../../ecommerce-dom-master/assets/images/products/11.png",
+      "../../ecommerce-dom-master/assets/images/products/12.png",
+      "../../ecommerce-dom-master/assets/images/products/13.png",
+      "../../ecommerce-dom-master/assets/images/products/14.png",
     ],
   },
   {
@@ -184,10 +184,10 @@ const products = [
     rating: 4,
     discount: 20,
     images: [
-      "../assets/images/products/12.png",
-      "../assets/images/products/13.png",
-      "../assets/images/products/14.png",
-      "../assets/images/products/15.png",
+      "../../ecommerce-dom-master/assets/images/products/12.png",
+      "../../ecommerce-dom-master/assets/images/products/13.png",
+      "../../ecommerce-dom-master/assets/images/products/14.png",
+      "../../ecommerce-dom-master/assets/images/products/15.png",
     ],
   },
   {
@@ -200,10 +200,10 @@ const products = [
     rating: 5,
     discount: 0,
     images: [
-      "../assets/images/products/13.png",
-      "../assets/images/products/14.png",
-      "../assets/images/products/15.png",
-      "../assets/images/products/16.png",
+      "../../ecommerce-dom-master/assets/images/products/13.png",
+      "../../ecommerce-dom-master/assets/images/products/14.png",
+      "../../ecommerce-dom-master/assets/images/products/15.png",
+      "../../ecommerce-dom-master/assets/images/products/16.png",
     ],
   },
   {
@@ -216,10 +216,10 @@ const products = [
     rating: 4.5,
     discount: 50,
     images: [
-      "../assets/images/products/14.png",
-      "../assets/images/products/15.png",
-      "../assets/images/products/16.png",
-      "../assets/images/products/17.png",
+      "../../ecommerce-dom-master/assets/images/products/14.png",
+      "../../ecommerce-dom-master/assets/images/products/15.png",
+      "../../ecommerce-dom-master/assets/images/products/16.png",
+      "../../ecommerce-dom-master/assets/images/products/17.png",
     ],
   },
   {
@@ -232,10 +232,10 @@ const products = [
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/15.png",
-      "../assets/images/products/16.png",
-      "../assets/images/products/17.png",
-      "../assets/images/products/18.png",
+      "../../ecommerce-dom-master/assets/images/products/15.png",
+      "../../ecommerce-dom-master/assets/images/products/16.png",
+      "../../ecommerce-dom-master/assets/images/products/17.png",
+      "../../ecommerce-dom-master/assets/images/products/18.png",
     ],
   },
   {
@@ -248,10 +248,10 @@ const products = [
     rating: 3.5,
     discount: 0,
     images: [
-      "../assets/images/products/16.png",
-      "../assets/images/products/17.png",
-      "../assets/images/products/18.png",
-      "../assets/images/products/19.png",
+      "../../ecommerce-dom-master/assets/images/products/16.png",
+      "../../ecommerce-dom-master/assets/images/products/17.png",
+      "../../ecommerce-dom-master/assets/images/products/18.png",
+      "../../ecommerce-dom-master/assets/images/products/19.png",
     ],
   },
   {
@@ -264,10 +264,10 @@ const products = [
     rating: 4.5,
     discount: 50,
     images: [
-      "../assets/images/products/17.png",
-      "../assets/images/products/18.png",
-      "../assets/images/products/19.png",
-      "../assets/images/products/20.png",
+      "../../ecommerce-dom-master/assets/images/products/17.png",
+      "../../ecommerce-dom-master/assets/images/products/18.png",
+      "../../ecommerce-dom-master/assets/images/products/19.png",
+      "../../ecommerce-dom-master/assets/images/products/20.png",
     ],
   },
   {
@@ -280,10 +280,10 @@ const products = [
     rating: 4,
     discount: 0,
     images: [
-      "../assets/images/products/18.png",
-      "../assets/images/products/19.png",
-      "../assets/images/products/20.png",
-      "../assets/images/products/21.png",
+      "../../ecommerce-dom-master/assets/images/products/18.png",
+      "../../ecommerce-dom-master/assets/images/products/19.png",
+      "../../ecommerce-dom-master/assets/images/products/20.png",
+      "../../ecommerce-dom-master/assets/images/products/21.png",
     ],
   },
   {
@@ -296,10 +296,10 @@ const products = [
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/19.png",
-      "../assets/images/products/20.png",
-      "../assets/images/products/21.png",
-      "../assets/images/products/22.png",
+      "../../ecommerce-dom-master/assets/images/products/19.png",
+      "../../ecommerce-dom-master/assets/images/products/20.png",
+      "../../ecommerce-dom-master/assets/images/products/21.png",
+      "../../ecommerce-dom-master/assets/images/products/22.png",
     ],
   },
   {
@@ -312,10 +312,10 @@ const products = [
     rating: 5,
     discount: 0,
     images: [
-      "../assets/images/products/20.png",
-      "../assets/images/products/21.png",
-      "../assets/images/products/22.png",
-      "../assets/images/products/23.png",
+      "../../ecommerce-dom-master/assets/images/products/20.png",
+      "../../ecommerce-dom-master/assets/images/products/21.png",
+      "../../ecommerce-dom-master/assets/images/products/22.png",
+      "../../ecommerce-dom-master/assets/images/products/23.png",
     ],
   },
   {
@@ -328,10 +328,10 @@ const products = [
     rating: 5,
     discount: 0,
     images: [
-      "../assets/images/products/21.png",
-      "../assets/images/products/22.png",
-      "../assets/images/products/23.png",
-      "../assets/images/products/24.png",
+      "../../ecommerce-dom-master/assets/images/products/21.png",
+      "../../ecommerce-dom-master/assets/images/products/22.png",
+      "../../ecommerce-dom-master/assets/images/products/23.png",
+      "../../ecommerce-dom-master/assets/images/products/24.png",
     ],
   },
   {
@@ -344,10 +344,10 @@ const products = [
     rating: 5,
     discount: 20,
     images: [
-      "../assets/images/products/22.png",
-      "../assets/images/products/23.png",
-      "../assets/images/products/24.png",
-      "../assets/images/products/25.png",
+      "../../ecommerce-dom-master/assets/images/products/22.png",
+      "../../ecommerce-dom-master/assets/images/products/23.png",
+      "../../ecommerce-dom-master/assets/images/products/24.png",
+      "../../ecommerce-dom-master/assets/images/products/25.png",
     ],
   },
   {
@@ -360,10 +360,10 @@ const products = [
     rating: 3.5,
     discount: 20,
     images: [
-      "../assets/images/products/23.png",
-      "../assets/images/products/24.png",
-      "../assets/images/products/25.png",
-      "../assets/images/products/26.png",
+      "../../ecommerce-dom-master/assets/images/products/23.png",
+      "../../ecommerce-dom-master/assets/images/products/24.png",
+      "../../ecommerce-dom-master/assets/images/products/25.png",
+      "../../ecommerce-dom-master/assets/images/products/26.png",
     ],
   },
   {
@@ -376,10 +376,10 @@ const products = [
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/24.png",
-      "../assets/images/products/25.png",
-      "../assets/images/products/26.png",
-      "../assets/images/products/27.png",
+      "../../ecommerce-dom-master/assets/images/products/24.png",
+      "../../ecommerce-dom-master/assets/images/products/25.png",
+      "../../ecommerce-dom-master/assets/images/products/26.png",
+      "../../ecommerce-dom-master/assets/images/products/27.png",
     ],
   },
   {
@@ -392,10 +392,10 @@ const products = [
     rating: 3.5,
     discount: 20,
     images: [
-      "../assets/images/products/25.png",
-      "../assets/images/products/26.png",
-      "../assets/images/products/27.png",
-      "../assets/images/products/28.png",
+      "../../ecommerce-dom-master/assets/images/products/25.png",
+      "../../ecommerce-dom-master/assets/images/products/26.png",
+      "../../ecommerce-dom-master/assets/images/products/27.png",
+      "../../ecommerce-dom-master/assets/images/products/28.png",
     ],
   },
   {
@@ -408,10 +408,10 @@ const products = [
     rating: 4,
     discount: 0,
     images: [
-      "../assets/images/products/26.png",
-      "../assets/images/products/27.png",
-      "../assets/images/products/28.png",
-      "../assets/images/products/29.png",
+      "../../ecommerce-dom-master/assets/images/products/26.png",
+      "../../ecommerce-dom-master/assets/images/products/27.png",
+      "../../ecommerce-dom-master/assets/images/products/28.png",
+      "../../ecommerce-dom-master/assets/images/products/29.png",
     ],
   },
   {
@@ -424,10 +424,10 @@ const products = [
     rating: 4.5,
     discount: 20,
     images: [
-      "../assets/images/products/27.png",
-      "../assets/images/products/28.png",
-      "../assets/images/products/29.png",
-      "../assets/images/products/30.png",
+      "../../ecommerce-dom-master/assets/images/products/27.png",
+      "../../ecommerce-dom-master/assets/images/products/28.png",
+      "../../ecommerce-dom-master/assets/images/products/29.png",
+      "../../ecommerce-dom-master/assets/images/products/30.png",
     ],
   },
   {
@@ -440,10 +440,10 @@ const products = [
     rating: 4,
     discount: 20,
     images: [
-      "../assets/images/products/28.png",
-      "../assets/images/products/29.png",
-      "../assets/images/products/30.png",
-      "../assets/images/products/31.png",
+      "../../ecommerce-dom-master/assets/images/products/28.png",
+      "../../ecommerce-dom-master/assets/images/products/29.png",
+      "../../ecommerce-dom-master/assets/images/products/30.png",
+      "../../ecommerce-dom-master/assets/images/products/31.png",
     ],
   },
   {
@@ -456,10 +456,10 @@ const products = [
     rating: 3,
     discount: 50,
     images: [
-      "../assets/images/products/29.png",
-      "../assets/images/products/30.png",
-      "../assets/images/products/31.png",
-      "../assets/images/products/32.png",
+      "../../ecommerce-dom-master/assets/images/products/29.png",
+      "../../ecommerce-dom-master/assets/images/products/30.png",
+      "../../ecommerce-dom-master/assets/images/products/31.png",
+      "../../ecommerce-dom-master/assets/images/products/32.png",
     ],
   },
   {
@@ -472,10 +472,10 @@ const products = [
     rating: 4,
     discount: 0,
     images: [
-      "../assets/images/products/30.png",
-      "../assets/images/products/31.png",
-      "../assets/images/products/32.png",
-      "../assets/images/products/33.png",
+      "../../ecommerce-dom-master/assets/images/products/30.png",
+      "../../ecommerce-dom-master/assets/images/products/31.png",
+      "../../ecommerce-dom-master/assets/images/products/32.png",
+      "../../ecommerce-dom-master/assets/images/products/33.png",
     ],
   },
   {
@@ -488,10 +488,10 @@ const products = [
     rating: 5,
     discount: 50,
     images: [
-      "../assets/images/products/31.png",
-      "../assets/images/products/32.png",
-      "../assets/images/products/33.png",
-      "../assets/images/products/34.png",
+      "../../ecommerce-dom-master/assets/images/products/31.png",
+      "../../ecommerce-dom-master/assets/images/products/32.png",
+      "../../ecommerce-dom-master/assets/images/products/33.png",
+      "../../ecommerce-dom-master/assets/images/products/34.png",
     ],
   },
   {
@@ -504,10 +504,10 @@ const products = [
     rating: 4.5,
     discount: 20,
     images: [
-      "../assets/images/products/32.png",
-      "../assets/images/products/33.png",
-      "../assets/images/products/34.png",
-      "../assets/images/products/35.png",
+      "../../ecommerce-dom-master/assets/images/products/32.png",
+      "../../ecommerce-dom-master/assets/images/products/33.png",
+      "../../ecommerce-dom-master/assets/images/products/34.png",
+      "../../ecommerce-dom-master/assets/images/products/35.png",
     ],
   },
   {
@@ -520,10 +520,10 @@ const products = [
     rating: 4.5,
     discount: 20,
     images: [
-      "../assets/images/products/33.png",
-      "../assets/images/products/34.png",
-      "../assets/images/products/35.png",
-      "../assets/images/products/36.png",
+      "../../ecommerce-dom-master/assets/images/products/33.png",
+      "../../ecommerce-dom-master/assets/images/products/34.png",
+      "../../ecommerce-dom-master/assets/images/products/35.png",
+      "../../ecommerce-dom-master/assets/images/products/36.png",
     ],
   },
   {
@@ -536,10 +536,10 @@ const products = [
     rating: 4,
     discount: 20,
     images: [
-      "../assets/images/products/34.png",
-      "../assets/images/products/35.png",
-      "../assets/images/products/36.png",
-      "../assets/images/products/1.png",
+      "../../ecommerce-dom-master/assets/images/products/34.png",
+      "../../ecommerce-dom-master/assets/images/products/35.png",
+      "../../ecommerce-dom-master/assets/images/products/36.png",
+      "../../ecommerce-dom-master/assets/images/products/1.png",
     ],
   },
   {
@@ -552,10 +552,10 @@ const products = [
     rating: 1,
     discount: 0,
     images: [
-      "../assets/images/products/35.png",
-      "../assets/images/products/36.png",
-      "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
+      "../../ecommerce-dom-master/assets/images/products/35.png",
+      "../../ecommerce-dom-master/assets/images/products/36.png",
+      "../../ecommerce-dom-master/assets/images/products/1.png",
+      "../../ecommerce-dom-master/assets/images/products/2.png",
     ],
   },
   {
@@ -568,10 +568,12 @@ const products = [
     rating: 3.5,
     discount: 0,
     images: [
-      "../assets/images/products/36.png",
-      "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
+      "../../ecommerce-dom-master/assets/images/products/36.png",
+      "../../ecommerce-dom-master/assets/images/products/1.png",
+      "../../ecommerce-dom-master/assets/images/products/2.png",
+      "../../ecommerce-dom-master/assets/images/products/3.png",
     ],
   },
 ];
+
+export default Products;

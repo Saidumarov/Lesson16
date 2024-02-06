@@ -1,4 +1,4 @@
-const categories = [
+const Categories = [
   { id: 1, name: "Fruit", image: "https://picsum.photos/200/300/?category0" },
   { id: 2, name: "Bakery", image: "https://picsum.photos/200/300/?category2" },
   {

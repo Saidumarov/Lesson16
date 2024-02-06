@@ -164,3 +164,51 @@ card2?.map(
 );
 
 cardW2.innerHTML = ui2;
+
+let katalog = document.querySelector(".katalog");
+katalog.addEventListener("click", () => {
+  katalog.classList.toggle("active");
+  document.querySelector(".katalog_wrapper").classList.toggle("active");
+});
+
+let inputResault = document.querySelector(".inputResult");
+async function fetchData() {
+  try {
+    const module = await import(
+      "../../ecommerce-dom-master/js/products-data.js"
+    );
+    const data = module.default;
+
+    let input = document.getElementById("search");
+
+    input.addEventListener("input", (e) => {
+      let value = e.target.value.trim().toLowerCase();
+      let filteredData = data.filter((el) =>
+        el?.name.toLowerCase().includes(value)
+      );
+
+      // Clear previous results
+      inputResault.innerHTML = "";
+      if (value !== "") {
+        inputResault.classList.add("active");
+      } else {
+        inputResault.classList.remove("active");
+      }
+      // Check if there are filtered results
+      if (filteredData.length === 0) {
+        inputResault.innerHTML = "<p>No matching products found.</p>";
+      } else {
+        // Display filtered results
+        filteredData.forEach((el) => {
+          inputResault.innerHTML += `<a href='../../pages/products.html'>
+        ${el.name}
+          </a>`;
+        });
+      }
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+fetchData();

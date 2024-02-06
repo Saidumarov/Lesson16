@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home | Page</title>
     <link rel="stylesheet" href="./css/global.css" />
   </head>
   <body>
@@ -21,22 +21,23 @@
             class="logo1"
           />
 
-          <img
-            src="./ecommerce-dom-master/assets/images/img/Button.png"
-            alt=""
-            class="katalog"
-          />
-          <img
-            src="./ecommerce-dom-master/assets/images/img/Button (1).png"
-            alt=""
-            class="katalog1"
-          />
+          <button class="katalog">
+            <div class="site_bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p>Каталог</p>
+          </button>
+
           <div class="header_input">
-            <input type="text" placeholder="Найти товар" />
+            <input type="text" placeholder="Найти товар" id="search" />
             <img
               src="./ecommerce-dom-master/assets/images/img/search.png"
               alt=""
             />
+
+            <div class="inputResult"></div>
           </div>
           <div class="header_logo">
             <img
@@ -65,6 +66,36 @@
         </div>
       </div>
     </header>
+    <div class="katalog_wrapper">
+      <div class="container">
+        <div class="katalog_w1">
+          <p><a href="./pages/categories.html">Молоко, сыр, яйцо</a></p>
+          <p><a href="./pages/categories.html">Хлеб</a></p>
+          <p><a href="./pages/categories.html">Фрукты и овощи</a></p>
+          <p><a href="./pages/categories.html">Замороженные продукты</a></p>
+        </div>
+        <div class="katalog_w1">
+          <p><a href="./pages/categories.html">Напитки</a></p>
+          <p><a href="./pages/categories.html">Кондитерские изделия</a></p>
+          <p><a href="./pages/categories.html">Чай, кофе</a></p>
+        </div>
+        <div class="katalog_w1">
+          <p><a href="./pages/categories.html">Бакалея</a></p>
+          <p><a href="./pages/categories.html">Здоровое питание</a></p>
+          <p>
+            <a href="./pages/categories.html">Зоотовары</a>
+          </p>
+        </div>
+        <div class="katalog_w1">
+          <p>
+            <a href="./pages/categories.html">Непродовольственные товары</a>
+          </p>
+          <p><a href="./pages/categories.html">Детское питание</a></p>
+          <p><a href="./pages/categories.html">Мясо, птица, колбаса</a></p>
+        </div>
+      </div>
+    </div>
+
     <main></main>
     <section class="carts_wrapper">
       <div class="container">
@@ -197,6 +228,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <img
         src="./ecommerce-dom-master/assets/images/img/footer (1).png"

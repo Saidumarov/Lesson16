@@ -1,0 +1,106 @@
+.all_product_w {
+  width: 100%;
+  .carts_wrapper {
+    .container {
+      .cards_w {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+          margin-bottom: 30px;
+          .card_img {
+            position: relative;
+            .button3 {
+              position: absolute;
+              top: 15px;
+              right: 15px;
+              cursor: pointer;
+            }
+            .im {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .all_product_w {
+    width: 100%;
+    .carts_wrapper {
+      .container {
+        padding-top: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .all_product_w {
+    width: 100%;
+    .carts_wrapper {
+      .container {
+        padding-top: 80px;
+        .cards_w {
+          display: grid;
+          grid-template-columns: auto auto;
+          width: 100%;
+          justify-content: space-between !important;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .all_product_w {
+    width: 100%;
+    .carts_wrapper {
+      .container {
+        padding-top: 80px;
+        .cards_w {
+          display: grid;
+          grid-template-columns: auto auto;
+          width: 100%;
+          justify-content: space-between !important;
+          padding-left: 10px;
+          .card {
+            height: 400px;
+            position: relative;
+            .card_dec {
+              .card_d {
+                button {
+                  position: absolute;
+                  bottom: 10px;
+                  width: 90%;
+                  margin-left: 10px;
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .all_product_w {
+    .carts_wrapper {
+      .container {
+        .cards_w {
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+}
