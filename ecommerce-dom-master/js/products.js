@@ -46,7 +46,8 @@ const ProductData = (data) => {
       img = "../../ecommerce-dom-master/assets/images/img/default-rating.png";
     }
     ui += `
-      <div class="card">
+      <a href="../../pages/category.html?id=${el?.id}">
+          <div class="card">
         <div class="card_img">
           <img src="../../ecommerce-dom-master/assets/images/img/Button (3).png" class="button3" />
           <img class="im" src="${el?.images[0]}" alt="" />
@@ -60,6 +61,7 @@ const ProductData = (data) => {
           </div>
         </div>
       </div>
+      </a>
     `;
   });
 
