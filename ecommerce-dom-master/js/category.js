@@ -195,3 +195,9 @@ async function fetchData() {
 }
 
 fetchData();
+
+let katalog = document.querySelector(".katalog");
+katalog.addEventListener("click", () => {
+  katalog.classList.toggle("active");
+  document.querySelector(".katalog_wrapper").classList.toggle("active");
+});

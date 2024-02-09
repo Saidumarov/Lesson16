@@ -277,12 +277,15 @@
       }
       textarea {
         width: 100%;
-        height: 100px;
+        height: 120px;
         border: none;
         outline: none;
         font-family: r;
         padding: 10px;
         border-radius: 5px;
+        font-size: 16px;
+        flex-shrink: 0;
+        resize: none;
       }
       button {
         width: 70%;
