@@ -10,7 +10,7 @@
     <!-- modal -->
     <div class="show_modal">
       <div class="modal">
-        <span class="x">
+        <span class="x" onclick="userOf()">
           <svg
             width="40"
             height="40"
@@ -33,11 +33,10 @@
             />
           </svg>
         </span>
-        <img src="" alt="" />
         <h3>Вход</h3>
         <span>
           <p>Телефон</p>
-          <input type="number" placeholder="+7 912" />
+          <input type="phone" placeholder="+7 912" />
         </span>
         <button class="ww">Вход</button>
         <div class="btn">
@@ -81,6 +80,7 @@
               src="../ecommerce-dom-master/assets/images/img/search.png"
               alt=""
             />
+            <div class="inputResult"></div>
           </div>
           <div class="header_logo">
             <img
@@ -100,11 +100,13 @@
             class="user"
             src="../ecommerce-dom-master/assets/images/img/UserMenu.png"
             alt=""
+            onclick="userOn()"
           />
           <img
             class="user1"
             src="../ecommerce-dom-master/assets/images/img/avatar/avatar.png"
             alt=""
+            onclick="userOn()"
           />
         </div>
       </div>
@@ -254,6 +256,5 @@
     </footer>
     <script src="../ecommerce-dom-master/js/category.js"></script>
     <script src="../ecommerce-dom-master/js/categories.js"></script>
-    <script src="../ecommerce-dom-master/js/home.js"></script>
   </body>
 </html>

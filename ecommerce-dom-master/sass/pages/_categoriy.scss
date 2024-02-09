@@ -147,7 +147,7 @@
 .show_modal {
   width: 100%;
   height: 100%;
-  background-color: rgb(240, 218, 199);
+  background-color: rgba(240, 218, 199, 0.776);
   position: fixed;
   top: 0;
   left: 0;
@@ -155,7 +155,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
+  transform: scale(0);
+  transition: 0.3s;
   .modal {
     width: 350px;
     height: 380px;
@@ -234,6 +235,9 @@
       }
     }
   }
+}
+.show_modal.active {
+  transform: scale(1);
 }
 @media screen and (max-width: 1000px) {
   .category_w {
