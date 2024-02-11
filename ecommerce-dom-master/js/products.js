@@ -46,8 +46,7 @@ const ProductData = (data) => {
       img = "../../ecommerce-dom-master/assets/images/img/default-rating.png";
     }
     ui += `
-      <a href="../../pages/category.html?id=${el?.id}">
-          <div class="card">
+          <div class="card" onclick="productDetailes(${el?.id})" >
         <div class="card_img">
           <img src="../../ecommerce-dom-master/assets/images/img/Button (3).png" class="button3" />
           <img class="im" src="${el?.images[0]}" alt="" />
@@ -57,13 +56,35 @@ const ProductData = (data) => {
             <h3>${el?.price} ₽</h3>
             <p>${el?.description.substring(0, 60)}</p>
             <img class="livel" src="${img}" alt="" />
-            <button>В корзину</button>
+           <button id="btnAdd" onclick="add(event, '${el?.id}' ,'${
+      el?.images
+    }' ,'${el?.name}' ,'${el?.category}' ,'${el?.description}' ,'${
+      el?.price
+    }' ,'${el?.discount}' ,'${el?.rating}')">В корзину</button>
           </div>
         </div>
       </div>
-      </a>
+     
     `;
   });
 
   cardW2.innerHTML = ui;
+};
+
+const productDetailes = (e) => {
+  window.location.href = `../../pages/category.html?id=${e}`;
+  e.stopPropagation();
+};
+
+const add = (e, id, img, name, category, dec, price, dis, riting) => {
+  e.stopPropagation();
+  let cart = localStorage.getItem("cart");
+  cart = cart ? JSON.parse(cart) : [];
+  const isExistingProduct = cart.some((product) => product.id === id);
+  if (!isExistingProduct) {
+    cart.push({ id, img, name, category, dec, price, dis, riting });
+    localStorage.setItem("cart", JSON.stringify(cart));
+  } else {
+    confirm("Bu mahsulot allaqachon savatchada mavjud.");
+  }
 };
