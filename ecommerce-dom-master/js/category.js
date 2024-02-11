@@ -80,7 +80,7 @@ const productImg = (data, indicators) => {
 let carts = localStorage.getItem("cart");
 let cartLocal = carts ? JSON.parse(carts) : {};
 let topLength = document.getElementById("cartLength");
-topLength.innerHTML = cartLocal.length;
+topLength.innerHTML = cartLocal.length ? cartLocal.length : 0;
 
 const addProduct = (id, img, name, category, dec, price, dis, riting) => {
   let cart = localStorage.getItem("cart");

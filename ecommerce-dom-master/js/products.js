@@ -33,7 +33,7 @@ async function fetchData() {
     console.error(e);
   }
 }
-topLength.innerHTML = cartLocal.length;
+topLength.innerHTML = cartLocal.length ? cartLocal.length : 0;
 
 fetchData();
 const ProductData = (data) => {
@@ -81,7 +81,6 @@ const productDetailes = (e) => {
 };
 
 const add = (e, id, img, name, category, dec, price, dis, riting) => {
-  topLength.innerHTML = cartLocal.length;
   e.stopPropagation();
   let cart = localStorage.getItem("cart");
   cart = cart ? JSON.parse(cart) : [];
@@ -89,6 +88,7 @@ const add = (e, id, img, name, category, dec, price, dis, riting) => {
   if (!isExistingProduct) {
     cart.push({ id, img, name, category, dec, price, dis, riting });
     localStorage.setItem("cart", JSON.stringify(cart));
+    topLength.innerHTML = cart.length;
   } else {
     confirm("Bu mahsulot allaqachon savatchada mavjud.");
   }

@@ -215,4 +215,4 @@ fetchData();
 let carts = localStorage.getItem("cart");
 let cartLocal = carts ? JSON.parse(carts) : {};
 let topLength = document.getElementById("cartLength");
-topLength.innerHTML = cartLocal.length;
+topLength.innerHTML = cartLocal.length ? cartLocal.length : 0;

@@ -6,8 +6,8 @@ let cartlength = document.querySelector(".length_cart");
 let topLength = document.getElementById("cartLength");
 const fetchDataCart = () => {
   let ui = "";
-  cartlength.innerHTML = cartLocal.length;
-  topLength.innerHTML = cartLocal.length;
+  cartlength.innerHTML = cartLocal.length ? cartLocal.length : 0;
+  topLength.innerHTML = cartLocal.length ? cartLocal.length : 0;
   cartLocal?.forEach((el, index) => {
     const itemCount = count[index] || 1;
     count[index] = itemCount;
