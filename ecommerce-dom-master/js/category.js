@@ -77,14 +77,19 @@ const productImg = (data, indicators) => {
   });
 };
 
+let carts = localStorage.getItem("cart");
+let cartLocal = carts ? JSON.parse(carts) : {};
+let topLength = document.getElementById("cartLength");
+topLength.innerHTML = cartLocal.length;
+
 const addProduct = (id, img, name, category, dec, price, dis, riting) => {
-  console.log("sasas");
   let cart = localStorage.getItem("cart");
   cart = cart ? JSON.parse(cart) : [];
   const isExistingProduct = cart.some((product) => product.id === id);
   if (!isExistingProduct) {
     cart.push({ id, img, name, category, dec, price, dis, riting });
     localStorage.setItem("cart", JSON.stringify(cart));
+    topLength.innerHTML = cart.length;
   } else {
     confirm("Bu mahsulot allaqachon savatchada mavjud.");
   }

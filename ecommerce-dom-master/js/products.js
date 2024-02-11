@@ -3,6 +3,9 @@ katalog.addEventListener("click", () => {
   katalog.classList.toggle("active");
   document.querySelector(".katalog_wrapper").classList.toggle("active");
 });
+let carts = localStorage.getItem("cart");
+let cartLocal = carts ? JSON.parse(carts) : {};
+let topLength = document.getElementById("cartLength");
 
 let cardW2 = document.getElementById("all_products");
 let ui = "";
@@ -30,6 +33,7 @@ async function fetchData() {
     console.error(e);
   }
 }
+topLength.innerHTML = cartLocal.length;
 
 fetchData();
 const ProductData = (data) => {
@@ -77,6 +81,7 @@ const productDetailes = (e) => {
 };
 
 const add = (e, id, img, name, category, dec, price, dis, riting) => {
+  topLength.innerHTML = cartLocal.length;
   e.stopPropagation();
   let cart = localStorage.getItem("cart");
   cart = cart ? JSON.parse(cart) : [];

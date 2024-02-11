@@ -96,6 +96,7 @@
                 alt=""
               />
             </a>
+            <span id="cartLength">0</span>
           </div>
           <img
             class="user"
@@ -215,6 +216,10 @@
       function userOf() {
         document.querySelector(".show_modal").classList.remove("active");
       }
+      let carts = localStorage.getItem("cart");
+      let cartLocal = carts ? JSON.parse(carts) : {};
+      let topLength = document.getElementById("cartLength");
+      topLength.innerHTML = cartLocal.length;
     </script>
   </body>
 </html>

@@ -2,9 +2,12 @@ let cart = document.querySelector(".cart_left_w");
 let count = {};
 let carts = localStorage.getItem("cart");
 let cartLocal = carts ? JSON.parse(carts) : {};
-
+let cartlength = document.querySelector(".length_cart");
+let topLength = document.getElementById("cartLength");
 const fetchDataCart = () => {
   let ui = "";
+  cartlength.innerHTML = cartLocal.length;
+  topLength.innerHTML = cartLocal.length;
   cartLocal?.forEach((el, index) => {
     const itemCount = count[index] || 1;
     count[index] = itemCount;
